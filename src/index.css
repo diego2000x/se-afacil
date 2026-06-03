@@ -60,3 +60,26 @@ body {
     transform: translateY(0);
   }
 }
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  height: 95vh;
+  justify-content: center;
+  text-align: center;
+}
+
+.titulo-menu {
+  margin: 3rem;
+  font-weight: 500;
+}
+
+.buscar {
+  font-family: "Google Sans";
+  margin: auto;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: rgba(147, 159, 171, 0.2);
+  color: aliceblue;
+  border: none;
+}
