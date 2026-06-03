@@ -1,0 +1,62 @@
+body {
+  background: linear-gradient(rgb(0, 0, 45), rgb(19, 27, 114));
+  color: aliceblue;
+  font-family: "Google Sans";
+  text-shadow: 0px 0px 7px rgba(0, 0, 0, 1);
+  animation: aparecer 0.8s ease-out;
+}
+
+.inicio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 95vh;
+}
+
+.saludo {
+  font-size: larger;
+}
+
+.entrar {
+  background: linear-gradient(to right, #0057ff, #1cc8ff);
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 20px;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease;
+  margin: 5rem;
+  text-shadow: 0px 0px 9px black;
+}
+
+.entrar:hover {
+  transform: translateY(-2px);
+}
+
+.logo {
+  width: 130px;
+  height: auto;
+  padding: 1.5rem;
+}
+
+.subtexto {
+  margin-top: auto;
+  padding: 1.6rem;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
