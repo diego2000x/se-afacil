@@ -83,3 +83,30 @@ body {
   color: aliceblue;
   border: none;
 }
+
+.buscar::placeholder {
+  color: aliceblue;
+  font-size: 1rem;
+}
+
+.logo-menu {
+  width: 30%;
+  height: auto;
+  margin: auto;
+}
+
+.seleccion {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+}
+
+.boton-elegir {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff29;
+  border-radius: 10px;
+  width: 120px;
+}
