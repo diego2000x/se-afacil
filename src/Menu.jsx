@@ -1,9 +1,11 @@
 import React from "react";
 import { useState } from "react";
 import logo from "./assets/logo.png";
+import { useNavigate } from "react-router-dom";
 
 function Menu() {
   const [busqueda, setBusqueda] = useState("");
+  const navigate = useNavigate();
 
   return (
     <>
@@ -17,18 +19,18 @@ function Menu() {
           placeholder="Buscar..."
         />
         <div className="seleccion">
-          <div className="boton-elegir">
-            <h1>🤗</h1>
+          <button className="boton-elegir" onClick={() => navigate("/categoria/saludos")}>
+            <span>🤗</span>
             <p>Saludos</p>
-          </div>
-          <div className="boton-elegir">
-            <h1>🤔</h1>
+          </button>
+          <button className="boton-elegir" onClick={() => navigate("/categoria/preguntas")}>
+            <span>🤔</span>
             <p>Preguntas</p>
-          </div>
-          <div className="boton-elegir">
-            <h1>😃</h1>
+          </button>
+          <button className="boton-elegir" onClick={() => navigate("/categoria/expresiones")}>
+            <span>😃</span>
             <p>Expresiones</p>
-          </div>
+          </button>
         </div>
         <img src={logo} alt="" className="logo-menu" />
       </div>

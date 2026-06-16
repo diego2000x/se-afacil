@@ -1,9 +1,11 @@
 body {
   background: linear-gradient(rgb(0, 0, 45), rgb(19, 27, 114));
   color: aliceblue;
-  font-family: "Google Sans";
+  font-family: "Google Sans", sans-serif;
   text-shadow: 0px 0px 7px rgba(0, 0, 0, 1);
   animation: aparecer 0.8s ease-out;
+  margin: 0;
+  overflow: hidden;
 }
 
 .inicio {
@@ -12,7 +14,7 @@ body {
   justify-content: center;
   text-align: center;
   align-items: center;
-  height: 95vh;
+  height: 100vh;
 }
 
 .saludo {
@@ -46,7 +48,7 @@ body {
 
 .subtexto {
   margin-top: auto;
-  padding: 1.6rem;
+  padding: 1.5rem;
 }
 
 @keyframes aparecer {
@@ -64,9 +66,10 @@ body {
 .menu {
   display: flex;
   flex-direction: column;
-  height: 95vh;
-  justify-content: center;
+  height: 100vh;
+  justify-content: space-around;
   text-align: center;
+  align-items: center;
 }
 
 .titulo-menu {
@@ -82,6 +85,11 @@ body {
   background-color: rgba(147, 159, 171, 0.2);
   color: aliceblue;
   border: none;
+  transition: 0.3s ease;
+}
+
+.buscar:hover {
+  background-color: rgba(147, 159, 171, 0.4);
 }
 
 .buscar::placeholder {
@@ -90,23 +98,86 @@ body {
 }
 
 .logo-menu {
-  width: 30%;
-  height: auto;
-  margin: auto;
+  max-width: 150px;
+  margin: 2rem;
+  margin-top: 4rem;
+  align-self: center;
 }
 
 .seleccion {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  margin: 1rem;
+  gap: 8px;
 }
 
 .boton-elegir {
+  all: unset;
   display: flex;
   flex-direction: column;
   background-color: #ffffff29;
   border-radius: 10px;
-  width: 120px;
+  min-width: 80px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  font-size: small;
+  transition: 0.3s ease;
+}
+
+.boton-elegir:hover {
+  background-color: #ffffff4d;
+}
+
+.boton-elegir span {
+  font-size: xx-large;
+}
+
+.Categoria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.CatNombre {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.Elementos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.boton-video {
+  all: unset;
+  background-color: #ffffff29;
+  border-radius: 10px;
+  min-width: 100px;
+  padding: 1rem;
+  margin: 1rem;
+  font-size: small;
+  transition: 0.3s ease;
+  text-align: center;
+}
+
+.boton-video:hover {
+  background-color: #ffffff4d;
+}
+
+.visor-videos {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.visor-videos video {
+  max-width: 70%;
+  max-height: 70%;
 }

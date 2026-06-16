@@ -1,0 +1,33 @@
+{
+  "saludos": [
+    {
+      "id": "hola",
+      "texto": "Hola ¿Como estas?",
+      "video": "hola.mp4"
+    }
+  ],
+  "preguntas": [
+    {
+      "id": "ayudar",
+      "texto": "¿Te puedo ayudar?",
+      "video": "ayudar.mp4"
+    }
+  ],
+  "expresiones": [
+    {
+      "id": "si",
+      "texto": "Si",
+      "video": "si.mp4"
+    },
+    {
+      "id": "no",
+      "texto": "No",
+      "video": "no.mp4"
+    },
+    {
+      "id": "gracias",
+      "texto": "Gracias",
+      "video": "gracias.mp4"
+    }
+  ]
+}
