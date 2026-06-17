@@ -1,5 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+import contenido from "./contenido.json";
 
 const Video = () => {
   const { video } = useParams();
