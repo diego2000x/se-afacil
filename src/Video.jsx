@@ -4,11 +4,13 @@ import contenido from "./contenido.json";
 
 const Video = () => {
   const { video } = useParams();
+  const datos = Object.values(contenido).flat();
+  const item = datos.find((elemento) => elemento.id === video);
   return (
     <div className="visor-videos">
       <h1>Señas</h1>
-      <video src={`/${video}.mp4`} controls />
-      <h2>{video}</h2>
+      <video src={`/${video}.mp4`} autoPlay muted loop playsInline controls />
+      <h2>{item.texto}</h2>
     </div>
   );
 };
