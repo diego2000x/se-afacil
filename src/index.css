@@ -181,3 +181,7 @@ body {
   max-width: 70%;
   max-height: 70%;
 }
+
+.videoplayer {
+  border-radius: 10px;
+}
