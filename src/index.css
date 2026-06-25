@@ -18,7 +18,7 @@ body {
 }
 
 .saludo {
-  font-size: larger;
+  font-size: x-large;
 }
 
 .entrar {
@@ -48,6 +48,7 @@ body {
 
 .subtexto {
   margin-top: auto;
+  margin-bottom: 2rem;
   padding: 1.5rem;
 }
 
@@ -184,4 +185,9 @@ body {
 
 .videoplayer {
   border-radius: 10px;
+}
+
+.mensajeInicio {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }

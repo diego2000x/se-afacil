@@ -8,6 +8,9 @@ function Inicio() {
     <div className="inicio">
       <img src={logo} alt="Logo" className="logo" />
       <p className="saludo">¡Bienvenido a SeñaFacil!</p>
+      <p className="mensajeInicio">
+        Donde aprendes lengua de señas chilena de forma rapida y facil.
+      </p>
       <button className="entrar" onClick={() => navigate("/menu")}>
         ¡Comunicate!
       </button>
