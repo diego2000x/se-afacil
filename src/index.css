@@ -98,6 +98,73 @@ body {
   font-size: 1rem;
 }
 
+.buscador-contenedor {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.resultados-busqueda {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(320px, 90vw);
+  max-height: 260px;
+  overflow-y: auto;
+  background-color: #1c1f24;
+  border: 1px solid rgba(147, 159, 171, 0.3);
+  border-radius: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0.4rem;
+  z-index: 10;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+.resultados-busqueda li {
+  margin: 0;
+}
+
+.resultado-item {
+  all: unset;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  border-radius: 8px;
+  color: aliceblue;
+  cursor: pointer;
+  transition: 0.2s ease;
+  box-sizing: border-box;
+}
+
+.resultado-item:hover,
+.resultado-item:focus {
+  background-color: rgba(147, 159, 171, 0.25);
+}
+
+.resultado-texto {
+  font-size: 0.95rem;
+  text-align: left;
+}
+
+.resultado-categoria {
+  font-size: 0.75rem;
+  opacity: 0.6;
+  text-transform: capitalize;
+  margin-left: 0.5rem;
+}
+
+.sin-resultados {
+  padding: 0.6rem 0.8rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
 .logo-menu {
   max-width: 150px;
   margin: 2rem;
